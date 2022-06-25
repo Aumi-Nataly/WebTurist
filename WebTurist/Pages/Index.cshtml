@@ -1,6 +1,33 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Главная";
 }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/forIndex.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebTurist.styles.css" asp-append-version="true" />
+</head>
+
+
+
+
+<div class="country">
+   
+    <h3>Выбери страну:</h3>
+   <ul>
+       @foreach(var country in Model.countrylist)
+       {
+       <li>@country.countryName</li>
+       }
+   </ul>
+
+   <div class="maininfo">
+
+   </div>
+
+</div>
 

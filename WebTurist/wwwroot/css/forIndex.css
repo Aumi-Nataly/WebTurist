@@ -1,0 +1,24 @@
+﻿.country {
+    float: right;
+    width: 20%;
+    background: #f492ef
+}
+    .country h3 {
+        color: ghostwhite;
+    }
+
+.maininfo {
+    float: left;
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+.country li {
+    padding: 10px;
+    font-size: 14pt;
+    color: ghostwhite;
+}
+

@@ -1,0 +1,58 @@
+﻿
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(to right, #f9c58d, #f492ef);
+}
+
+.slogan {
+    font-size: 20pt;
+    color: ghostwhite;
+    font-style: italic
+}
+
+
+.menu {
+    flex-grow: 1;
+}
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 16px;
+        line-height: 18px;
+        color: blueviolet;
+        
+    }
+
+    .menu li {
+        margin-right: 20px;
+        background-color: ghostwhite;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20pt;
+    }
+        .menu li:first-child {
+            margin-left: 40px;
+        }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 20px;
+    background: linear-gradient(to right, #f9c58d, #f492ef);
+}
+
+    footer p {
+        float: right;
+        color: ghostwhite;
+        padding: 10px
+    }
