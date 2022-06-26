@@ -6,9 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+#region My services
 var connectionString = builder.Configuration.GetConnectionString("TuristDB");
 builder.Services.AddDbContext<TuristDBContext>(options => options.UseSqlServer(connectionString));
 
+builder.Services.AddScoped<Contract.ICountryCity, ServiceData.CountryCity>();
+#endregion
 
 var app = builder.Build();
 
