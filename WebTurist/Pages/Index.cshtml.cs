@@ -7,11 +7,11 @@ namespace WebTurist.Pages
 {
     public class IndexModel : PageModel
     {
-        public  List<CountriesList> countrylist { get; set; }
+        public List<CountriesList> countrylist { get; set; }
         private readonly ICountryCity country;
         public IndexModel(ICountryCity _country)
         {
-            country= _country;
+            country = _country;
             countrylist = new List<CountriesList>();
 
         }

@@ -1,0 +1,28 @@
+﻿
+
+.main table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    background-color: aliceblue;
+    padding: 50px;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.main {
+    background-color: honeydew;
+    font-size: 14pt;
+    height:100%
+}
+
+    .main h3 {
+        padding: 10px;
+    }
+
+    .main p {
+        padding: 10px;
+    }
+

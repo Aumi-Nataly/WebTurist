@@ -1,0 +1,17 @@
+﻿@model List<Models.CountriesList>
+
+    <head>
+        <link rel="stylesheet" href="~/css/forIndex.css" asp-append-version="true" />
+    </head>
+
+
+<h3>Выбери страну:</h3>
+
+<ul>
+    @foreach (var country in Model)
+    {
+        <li class="nav-item">           
+            <a class="nav-link text-dark" asp-area="" asp-page="Country" asp-route-id="@country.countryId"> @country.countryName</a>
+        </li>
+    }
+</ul>

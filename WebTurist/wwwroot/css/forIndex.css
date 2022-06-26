@@ -22,3 +22,12 @@ ul {
     color: ghostwhite;
 }
 
+.country a:active {
+    color: ghostwhite;
+}
+
+.country a:hover {
+    
+    font-weight: bold; 
+    color: ghostwhite; 
+}

@@ -1,0 +1,41 @@
+﻿@page "{id}"
+@model WebTurist.Pages.CountryModel
+@{
+    ViewData["Title"] = @Model.cinfo.countryName;
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/country.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebTurist.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+
+<div class="main">
+
+    <h3>@Model.cinfo.countryName</h3>
+
+
+    <div class="forCountry">
+
+        <table>
+
+            <tr><td>Основной язык: @Model.cinfo.language</td> </tr>
+            <tr><td>Валюта: @Model.cinfo.currencyName</td> </tr>
+
+        </table>
+
+    </div>
+
+    <div class="info">
+        <h3> Краткая информация:</h3>
+        <p>@Model.cinfo.SummaryInfo</p>
+
+    </div>
+
+</div>
+
+</body>

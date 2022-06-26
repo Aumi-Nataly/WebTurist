@@ -18,5 +18,13 @@ namespace Contract
         /// <returns></returns>
         public List<CountriesList> countriesLists();
 
+
+        /// <summary>
+        /// Информация по указанной стране
+        /// </summary>
+        /// <param name="id">id страны</param>
+        /// <returns></returns>
+        public CountryInfo countryInfo(int id);
+
     }
 }

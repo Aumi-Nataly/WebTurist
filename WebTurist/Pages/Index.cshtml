@@ -17,13 +17,9 @@
 
 <div class="country">
    
-    <h3>Выбери страну:</h3>
-   <ul>
-       @foreach(var country in Model.countrylist)
-       {
-       <li class="nav-item">@country.countryName</li>
-       }
-   </ul>
+   <partial name="_CountryList" model="Model.countrylist"/>
+
+
 
    <div class="maininfo">
 

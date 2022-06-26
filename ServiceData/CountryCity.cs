@@ -31,12 +31,27 @@ namespace ServiceData
 
             foreach (var l in country)
             {
-                countries.Add(new CountriesList {countryId=l.CountryId,countryName=l.CountryName });
+                countries.Add(new CountriesList { countryId = l.CountryId, countryName = l.CountryName });
             }
 
 
             return countries;
 
+        }
+
+        public CountryInfo countryInfo(int id)
+        {
+
+            var c = connect.TblCountries.Where(n => n.CountryId == id).FirstOrDefault();
+
+            return new CountryInfo()
+            {
+                language = c.LanguageMain,
+                currencyName = c.CurrencyName,
+                SummaryInfo = c.SummaryInfo,
+                countryId = c.CountryId,
+                countryName = c.CountryName
+            };
         }
     }
 }
