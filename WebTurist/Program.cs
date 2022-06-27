@@ -1,5 +1,6 @@
 using DataBaseLib.TuristDB.Models;
 using Microsoft.EntityFrameworkCore;
+using WebTurist.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,9 @@ var connectionString = builder.Configuration.GetConnectionString("TuristDB");
 builder.Services.AddDbContext<TuristDBContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<Contract.ICountryCity, ServiceData.CountryCity>();
+
+builder.Services.AddScoped<PageHaveCountryAtribute>();
+
 #endregion
 
 var app = builder.Build();

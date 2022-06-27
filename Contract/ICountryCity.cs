@@ -26,7 +26,12 @@ namespace Contract
         /// <returns></returns>
         public CountryInfo countryInfo(int id);
 
-   
+        /// <summary>
+        /// Проверка на наличие страны по коду
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool countryExists(int id);
 
     }
 }

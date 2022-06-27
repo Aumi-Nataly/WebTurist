@@ -39,6 +39,13 @@ namespace ServiceData
 
         }
 
+        public bool countryExists(int id)
+        {
+            bool have = connect.TblCountries.Any(n => n.CountryId == id);
+
+            return have;
+        }
+
         public CountryInfo countryInfo(int id)
         {
             try
