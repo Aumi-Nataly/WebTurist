@@ -36,6 +36,15 @@
 
     </div>
 
+    @foreach(var city in Model.cinfo.cities)
+        {
+             <li class="nav-item">  
+                 @city.cityName
+            @*<a class="nav-link text-dark" asp-area="" asp-page="Country" asp-route-id="@country.countryId"> @country.countryName</a>*@
+        </li>
+        }
+
+
 </div>
 
 </body>

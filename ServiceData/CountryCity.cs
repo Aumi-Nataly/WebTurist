@@ -41,17 +41,41 @@ namespace ServiceData
 
         public CountryInfo countryInfo(int id)
         {
-
-            var c = connect.TblCountries.Where(n => n.CountryId == id).FirstOrDefault();
-
-            return new CountryInfo()
+            try
             {
-                language = c.LanguageMain,
-                currencyName = c.CurrencyName,
-                SummaryInfo = c.SummaryInfo,
-                countryId = c.CountryId,
-                countryName = c.CountryName
-            };
+
+                var c = connect.TblCountries.Where(n => n.CountryId == id).FirstOrDefault();
+
+                List<City> city = connect.TblCities.Join(connect.TblCountries, ci => ci.CountryId, co => co.CountryId, (ci, co) => new { ci.CityId, ci.CountryId, ci.CityName })
+                                            .Select(cityl => new City()
+                                            {
+                                                CityId = cityl.CityId,
+                                                CountryId = (int)cityl.CountryId,
+                                                cityName = cityl.CityName
+                                            })
+                                            .Where(cityl => cityl.CountryId == id)
+                                            .ToList();
+
+
+
+
+                return new CountryInfo()
+                {
+                    language = c.LanguageMain,
+                    currencyName = c.CurrencyName,
+                    SummaryInfo = c.SummaryInfo,
+                    countryId = c.CountryId,
+                    countryName = c.CountryName,
+                    cities = city
+                };
+           
+            
+            
+            }catch (Exception ex)
+            { throw ex; }
+
+
+
         }
     }
 }

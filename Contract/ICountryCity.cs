@@ -26,5 +26,7 @@ namespace Contract
         /// <returns></returns>
         public CountryInfo countryInfo(int id);
 
+   
+
     }
 }
