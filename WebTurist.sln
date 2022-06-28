@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTurist", "WebTurist\WebT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseLib", "DataBaseLib\DataBaseLib.csproj", "{3A628823-954F-4A1D-ABC4-84839C48D1AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contract", "Contract\Contract.csproj", "{31841B5F-520D-45E7-9380-F7854BEDFAD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contract", "Contract\Contract.csproj", "{31841B5F-520D-45E7-9380-F7854BEDFAD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{9A3A64B6-2A5C-4B95-B772-2FAAF9FF51F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{9A3A64B6-2A5C-4B95-B772-2FAAF9FF51F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceData", "ServiceData\ServiceData.csproj", "{8164677D-5B5D-4EF2-AAC8-C6981C00B1A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceData", "ServiceData\ServiceData.csproj", "{8164677D-5B5D-4EF2-AAC8-C6981C00B1A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTest", "DataTest\DataTest.csproj", "{2AF597A8-E73A-4BC2-9FA5-3BA0EE0B5C86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTest", "DataTest\DataTest.csproj", "{2AF597A8-E73A-4BC2-9FA5-3BA0EE0B5C86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

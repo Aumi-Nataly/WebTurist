@@ -1,0 +1,9 @@
+﻿@page "{statusCode:int}"
+@model WebTurist.Pages.StatusCodeModel
+@{
+}
+
+
+<h3>Произошла ошибка: @Model.OriginalStatusCode - @Model.ReasonPhrase</h3>
+
+<img src="~/pic/cross_delete.png" width="512" height="512" />

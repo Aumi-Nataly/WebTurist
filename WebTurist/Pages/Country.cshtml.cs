@@ -19,7 +19,9 @@ namespace WebTurist.Pages
     
         public void OnGet(int id)
         {
-            cinfo = country.countryInfo(id);
+             cinfo = country.countryInfo(id);
+
+           // throw new Exception("Ошибочка вышла");
         }
     }
 }
