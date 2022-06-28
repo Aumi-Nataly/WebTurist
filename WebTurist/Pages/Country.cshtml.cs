@@ -21,7 +21,7 @@ namespace WebTurist.Pages
         {
              cinfo = country.countryInfo(id);
 
-           // throw new Exception("Ошибочка вышла");
+           
         }
     }
 }
